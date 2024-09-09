@@ -8,6 +8,7 @@ public class Product : BaseEntity
     [BsonElement("Name")]
     public string Name { get; set; }
     public string Description { get; set; }
+    public string Summary { get; set; }
     [BsonRepresentation(BsonType.Decimal128)]
     public Decimal Price { get; set; }
     public string PictureUrl { get; set; }
