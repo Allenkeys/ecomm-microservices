@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Enums\" />
-    <Folder Include="Repositories\Implementations\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
 
   <ItemGroup>

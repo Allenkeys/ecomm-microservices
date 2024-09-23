@@ -6,7 +6,7 @@ namespace Catalog.Infrastructure.Data
 {
     public static class ProductContextSeeder
     {
-        public static async Task SeedBrand(IMongoCollection<Product> productCollection)
+        public static async Task SeedData(IMongoCollection<Product> productCollection)
         {
             bool existingProduct = productCollection.Find(x => true).Any();
             if (!existingProduct)

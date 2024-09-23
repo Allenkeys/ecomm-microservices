@@ -1,3 +1,6 @@
+using System.Reflection;
+using Catalog.API.Configurations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +15,11 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1",
         Description = "Catalog Microservice app"
     }));
+
+builder.Services.ConfigureAppSettings(builder.Configuration);
+builder.Services.RegisterServices();
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
 var app = builder.Build();
 

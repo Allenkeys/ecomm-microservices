@@ -18,6 +18,17 @@ namespace Catalog.Infrastructure.Data
             Products = database.GetCollection<Product>(databaseSettings.Value.ProductCollection);
             ProductTypes = database.GetCollection<ProductType>(databaseSettings.Value.ProductTypeCollection);
             Brands = database.GetCollection<Brand>(databaseSettings.Value.BrandCollection);
+            _ = PopulateDatabase();
+        }
+
+        private async Task PopulateDatabase()
+        {
+            await Task.WhenAll
+                (
+                    ProductContextSeeder.SeedData(Products),
+                    ProductTypeContextSeeder.SeedData(ProductTypes),
+                    BrandContextSeeder.SeedData(Brands)
+                ).ConfigureAwait(false);
         }
     }
 }
