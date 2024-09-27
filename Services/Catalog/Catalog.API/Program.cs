@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen(c =>
     { 
         Title = "Catalog API", 
         Version = "v1",
-        Description = "Catalog Microservice app"
+        Description = "Catalog Microservice App"
     }));
 
 builder.Services.ConfigureAppSettings(builder.Configuration);
@@ -27,8 +27,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/Catalog/swagger.json", "Catalog API"));
 }
+
+app.UseRouting();
 
 app.UseAuthorization();
 

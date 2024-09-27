@@ -31,16 +31,16 @@ namespace Catalog.Infrastructure.Repositories.Implementations
             return await _products.Find(x => true).ToListAsync();
         }
 
-        public async Task<Product> GetProduct(string Id) => await _products.Find(x => x.Id == Id).FirstOrDefaultAsync();
+        public async Task<Product> GetProduct(string id) => await _products.Find(x => x.Id == id).FirstOrDefaultAsync();
 
         public async Task<IEnumerable<Product>> GetProductsByBrandName(string brandName)
         {
             return await _products.Find(x => x.Brand.Name == brandName).ToListAsync();
         }
 
-        public async Task<IEnumerable<Product>> GetProductsByName(string Name)
+        public async Task<IEnumerable<Product>> GetProductsByName(string name)
         {
-            return await _products.Find(x => x.Name == Name).ToListAsync();
+            return await _products.Find(x => x.Name == name).ToListAsync();
         }
 
         public async Task<bool> UpdateProduct(Product product)
