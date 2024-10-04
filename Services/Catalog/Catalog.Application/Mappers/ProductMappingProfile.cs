@@ -10,6 +10,7 @@ namespace Catalog.Application.Mappers
         public ProductMappingProfile()
         {
             CreateMap<Product, ProductResponse>();
+            
             CreateMap<CreateProductCommand, Product>();
         }
     }

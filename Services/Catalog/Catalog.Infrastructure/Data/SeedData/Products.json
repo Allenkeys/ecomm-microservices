@@ -6,14 +6,15 @@
         "Price": 3500,
         "PictureUrl": "images/products/adidas_shoe-1.png",
         "Summary": "Adidas Quick Force Indoor Badminton Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e40e0aa3968b549af53",
             "Name": "Adidas"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "602d2149e773f2a3990b47f6",
@@ -22,14 +23,15 @@
         "Price": 3375,
         "PictureUrl": "images/products/adidas_shoe-2.png",
         "Summary": "Adidas Quick Force Indoor Badminton Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e40e0aa3968b549af53",
             "Name": "Adidas"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "602d2149e773f2a3990b47f7",
@@ -38,14 +40,15 @@
         "Price": 3375,
         "PictureUrl": "images/products/adidas_shoe-3.png",
         "Summary": "Adidas Quick Force Indoor Badminton Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e40e0aa3968b549af53",
             "Name": "Adidas"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "602d2149e773f2a3990b47f8",
@@ -54,14 +57,15 @@
         "Price": 4249,
         "PictureUrl": "images/products/asics_shoe-1.png",
         "Summary": "Asics Gel Rocket 8 Indoor Court Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e4c455900b990b43bc1",
             "Name": "ASICS"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "602d2149e773f2a3990b47f9",
@@ -70,14 +74,15 @@
         "Price": 3499,
         "PictureUrl": "images/products/asics_shoe-2.png",
         "Summary": "Asics Gel Rocket 8 Indoor Court Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e4c455900b990b43bc1",
             "Name": "ASICS"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "602d2149e773f2a3990b47fa",
@@ -86,14 +91,15 @@
         "Price": 3499,
         "PictureUrl": "images/products/asics_shoe-3.png",
         "Summary": "Asics Gel Rocket 8 Indoor Court Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e4c455900b990b43bc1",
             "Name": "ASICS"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "702d2149e773f2a3990b47fa",
@@ -102,14 +108,15 @@
         "Price": 2392,
         "PictureUrl": "images/products/victor_shoe-1.png",
         "Summary": "Victor SHW503 F Badminton Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e59065163c16451bd73",
             "Name": "Victor"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "802d2149e773f2a3990b47fa",
@@ -118,14 +125,15 @@
         "Price": 3000,
         "PictureUrl": "images/products/victor_shoe-2.png",
         "Summary": "Victor SHW503 F Badminton Shoes",
-        "Types": {
+        "ProductType": {
             "Id": "63ca5d4bc3a8a58f47299f97",
             "Name": "Shoes"
         },
         "Brand": {
             "Id": "63ca5e59065163c16451bd73",
             "Name": "Victor"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "902d2149e773f2a3990b47fa",
@@ -141,7 +149,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "912d2149e773f2a3990b47fa",
@@ -157,7 +166,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 10
     },
     {
         "Id": "922d2149e773f2a3990b47fa",
@@ -173,7 +183,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 7
     },
     {
         "Id": "932d2149e773f2a3990b47fa",
@@ -189,7 +200,8 @@
         "Brand": {
             "Id": "63ca5e728c4cff9708ada2a6",
             "Name": "Puma"
-        }
+        },
+        "AvailableStock": 23
     },
     {
         "Id": "942d2149e773f2a3990b47fa",
@@ -205,7 +217,8 @@
         "Brand": {
             "Id": "63ca5e728c4cff9708ada2a6",
             "Name": "Puma"
-        }
+        },
+        "AvailableStock": 18
     },
     {
         "Id": "952d2149e773f2a3990b47fa",
@@ -221,7 +234,8 @@
         "Brand": {
             "Id": "63ca5e728c4cff9708ada2a6",
             "Name": "Puma"
-        }
+        },
+        "AvailableStock": 90
     },
     {
         "Id": "962d2149e773f2a3990b47fa",
@@ -237,7 +251,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 5
     },
     {
         "Id": "972d2149e773f2a3990b47fa",
@@ -253,7 +268,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 3
     },
     {
         "Id": "982d2149e773f2a3990b47fa",
@@ -269,7 +285,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 101
     },
     {
         "Id": "992d2149e773f2a3990b47fa",
@@ -285,7 +302,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 170
     },
     {
         "Id": "991d2149e773f2a3990b47fa",
@@ -301,7 +319,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 210
     },
     {
         "Id": "992d2149e773f2a3990b47fa",
@@ -317,7 +336,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 123
     },
     {
         "Id": "993d2149e773f2a3990b47fa",
@@ -333,7 +353,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 19
     },
     {
         "Id": "994d2149e773f2a3990b47fa",
@@ -349,7 +370,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 109
     },
     {
         "Id": "995d2149e773f2a3990b47fa",
@@ -365,7 +387,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 210
     },
     {
         "Id": "996d2149e773f2a3990b47fa",
@@ -381,7 +404,8 @@
         "Brand": {
             "Id": "63ca5e40e0aa3968b549af53",
             "Name": "Adidas"
-        }
+        },
+        "AvailableStock": 101
     },
     {
         "Id": "997d2149e773f2a3990b47fa",
@@ -397,7 +421,8 @@
         "Brand": {
             "Id": "63ca5e40e0aa3968b549af53",
             "Name": "Adidas"
-        }
+        },
+        "AvailableStock": 104
     },
     {
         "Id": "998d2149e773f2a3990b47fa",
@@ -413,7 +438,8 @@
         "Brand": {
             "Id": "63ca5e40e0aa3968b549af53",
             "Name": "Adidas"
-        }
+        },
+        "AvailableStock": 130
     },
     {
         "Id": "999d2149e773f2a3990b47fa",
@@ -429,7 +455,8 @@
         "Brand": {
             "Id": "63ca5e7ec90ff5c8f44d5ac8",
             "Name": "Nike"
-        }
+        },
+        "AvailableStock": 100
     },
     {
         "Id": "99912149e773f2a3990b47fa",
@@ -445,7 +472,8 @@
         "Brand": {
             "Id": "63ca5e7ec90ff5c8f44d5ac8",
             "Name": "Nike"
-        }
+        },
+        "AvailableStock": 1
     },
     {
         "Id": "99922149e773f2a3990b47fa",
@@ -461,7 +489,8 @@
         "Brand": {
             "Id": "63ca5e7ec90ff5c8f44d5ac8",
             "Name": "Nike"
-        }
+        },
+        "AvailableStock": 12
     },
     {
         "Id": "99932149e773f2a3990b47fa",
@@ -477,7 +506,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 19
     },
     {
         "Id": "99942149e773f2a3990b47fa",
@@ -493,7 +523,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 18
     },
     {
         "Id": "99952149e773f2a3990b47fa",
@@ -509,7 +540,8 @@
         "Brand": {
             "Id": "63ca5e8d6110a9c56ee7dc48",
             "Name": "Babolat"
-        }
+        },
+        "AvailableStock": 16
     },
     {
         "Id": "99962149e773f2a3990b47fa",
@@ -525,7 +557,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 15
     },
     {
         "Id": "99972149e773f2a3990b47fa",
@@ -541,7 +574,8 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 14
     },
     {
         "Id": "99982149e773f2a3990b47fa",
@@ -557,6 +591,7 @@
         "Brand": {
             "Id": "63ca5e655ec1fdc49bd9327d",
             "Name": "Yonex"
-        }
+        },
+        "AvailableStock": 10
     }
 ]

@@ -2,6 +2,7 @@
 using Catalog.Infrastructure.Repositories.Implementations;
 using Catalog.Infrastructure.Repositories.Interfaces;
 using Catalog.Infrastructure.Utilities;
+using MediatR;
 
 namespace Catalog.API.Configurations
 {
@@ -18,7 +19,6 @@ namespace Catalog.API.Configurations
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
             services.AddScoped<IBrandRepository, BrandRepository>();
-
             return services;
         }
     }

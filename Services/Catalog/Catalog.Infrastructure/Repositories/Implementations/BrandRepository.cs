@@ -13,7 +13,7 @@ namespace Catalog.Infrastructure.Repositories.Implementations
         {
             _brands = context.Brands;
         }
-        public async Task<IEnumerable<Brand>> GetAllBrands()
+        public async Task<List<Brand>> GetAllBrands()
         {
             return await _brands.Find(x => true).ToListAsync();
         }

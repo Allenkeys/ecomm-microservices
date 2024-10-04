@@ -1,5 +1,7 @@
-using System.Reflection;
 using Catalog.API.Configurations;
+using System.Reflection;
+using Catalog.Application.Mappers;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,9 +20,9 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.ConfigureAppSettings(builder.Configuration);
 builder.Services.RegisterServices();
-builder.Services.AddAutoMapper(typeof(Program));
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
-
+builder.Services.AddAutoMapper(typeof(BrandsMappingProfile));
+var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(assemblies));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
