@@ -47,6 +47,8 @@ namespace Catalog.Infrastructure.Repositories.Implementations
         {
             var updateResult = await _products.ReplaceOneAsync(x => x.Id == product.Id, product);
 
+            //var up = await _products.UpdateOneAsync();
+
             return updateResult.IsAcknowledged && updateResult.ModifiedCount > 0;
         }
     }

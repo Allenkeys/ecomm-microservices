@@ -15,7 +15,7 @@ namespace Catalog.API.Configurations
 
         public static IServiceCollection RegisterServices(this IServiceCollection services)
         {
-            services.AddScoped<ICatalogDBContext, CatalogDBContext>();
+            services.AddSingleton<ICatalogDBContext, CatalogDBContext>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductTypeRepository, ProductTypeRepository>();
             services.AddScoped<IBrandRepository, BrandRepository>();

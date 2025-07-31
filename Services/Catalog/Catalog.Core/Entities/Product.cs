@@ -10,7 +10,7 @@ public class Product : BaseEntity
     public string Description { get; set; }
     public string Summary { get; set; }
     [BsonRepresentation(BsonType.Decimal128)]
-    public Decimal Price { get; set; }
+    public decimal Price { get; set; }
     public string PictureUrl { get; set; }
     public ProductType ProductType { get; set; }
     public Brand Brand { get; set; }

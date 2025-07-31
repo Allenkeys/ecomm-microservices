@@ -13,22 +13,23 @@ namespace Catalog.Infrastructure.Data
 
         public CatalogDBContext(IOptions<MongoDbSettings> databaseSettings)
         {
-            var client = new MongoClient(databaseSettings.Value.ConnectionURI);
-            var database = client.GetDatabase(databaseSettings.Value.DatabaseName);
-            Products = database.GetCollection<Product>(databaseSettings.Value.ProductCollection);
-            ProductTypes = database.GetCollection<ProductType>(databaseSettings.Value.ProductTypeCollection);
-            Brands = database.GetCollection<Brand>(databaseSettings.Value.BrandCollection);
+            var settings = databaseSettings.Value;
+            var client = new MongoClient(settings.ConnectionURI);
+            var database = client.GetDatabase(settings.DatabaseName);
+            Products = database.GetCollection<Product>(settings.ProductCollection);
+            ProductTypes = database.GetCollection<ProductType>(settings.ProductTypeCollection);
+            Brands = database.GetCollection<Brand>(settings.BrandCollection);
             _ = PopulateDatabase();
         }
 
         private async Task PopulateDatabase()
         {
             await Task.WhenAll
-                (
-                    ProductContextSeeder.SeedData(Products),
-                    ProductTypeContextSeeder.SeedData(ProductTypes),
-                    BrandContextSeeder.SeedData(Brands)
-                ).ConfigureAwait(false);
+            (
+                ProductContextSeeder.SeedData(Products),
+                ProductTypeContextSeeder.SeedData(ProductTypes),
+                BrandContextSeeder.SeedData(Brands)
+            );
         }
     }
 }
